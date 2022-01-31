@@ -1,25 +1,19 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+import {Test} from "./components/test";
+import {Landing} from "./pages/Landing";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // let fruits=["apple","ball","cat","dog"]
+  // let vari="apple";
+  // return(
+  //   <div>
+  //     <Test title={vari}/>
+  //     {fruits.map((fruit,key)=><Test title={fruit}/>)}
+  //   </div>
+  // );
+
+  return <Landing/>;
 }
 
 export default App;
