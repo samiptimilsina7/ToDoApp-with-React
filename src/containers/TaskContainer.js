@@ -5,9 +5,9 @@ export const TaskContainer=(props)=>{
         <div className="task-container">
             <div className="task-container-title">{props.title}</div>
             <div className="task-list">
-                {props.tasks.map((task)=>
+                {props.tasks.map((task,key)=>
                 
-                    <Task task={task}/>
+                    <Task task={task} key={key}/>
                 )}
             </div>
         </div>

@@ -26,6 +26,8 @@ section.home{
 .section-title{
   font-size: 36px;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-description{
@@ -45,4 +47,51 @@ section.home{
   background-color: white;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.dialog{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card{
+  padding: 16px;
+  border-radius: 16px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.add-task-form{
+  height: 400px;
+  width: 400px;
+}
+
+.slideTop{
+  animation: slideTop 1s ease 0.4s;
+}
+
+@keyframes slideTop{
+  from{
+    transform: translateY(-100%);
+    opacity: 0;
+  } to{
+    transform: translateY(0%);
+    opacity: 100%;
+  }
 }
